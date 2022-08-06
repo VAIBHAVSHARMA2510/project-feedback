@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ..................feedback form............... */
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    color: #6c757d;
+    background-color: #ffffff;
+}
+ .container{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 2rem 2rem 2rem;
+    /* padding: 2rem; */
+    max-width: fit-content;
+    max-height: fit-content;
+    /* width: 2050rem; */
+    /* height:38rem; */
+    /* margin: 10rem auto auto auto; */
+ }
+ .right{
+    margin-left: 2rem;
+ }
+.container h1{
+    font-style: oblique;
+    font-weight: 700;
+    color: #ffffff;
+}
+.container p {
+    font-family: 'Poppins';
+    font-style: oblique;
+    font-weight: 700;
+    font-size: 90%;
+    margin-bottom: 2%;
+    line-height: 110%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background: linear-gradient(140.08deg, #A87C2F 0%, #E78542 85.62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.container p1{
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 90%;
+    line-height: 130%;
+    color: #ffffff;
+    margin-bottom: 50%;
+}
+.Name{
+    font-family: 'Poppins','Font Awesome 6 Free';
+    position: static;
+    font-weight: 500;
+    font-size: 80%;
+    padding: 0.6rem;
+    width: 80%;
+    height: 47%;
+    font-style: normal;
+    letter-spacing: 2px;
+    /* word-spacing: 2.2rem;      */
+}
+.form-label{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 20px;
+    color: #ffffff;
+    margin-top: 1%;
+}
+.form-control{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+     border: 2px solid #ffffff; 
+    padding: 0.6rem;
+    width: 75%;
+    margin-bottom: 1.5rem;
+    left: 0%;
+    right: 0%;
+    top: 36.54%;
+    bottom: 0%;
+    background: #ffffff;
+    box-shadow: 0px 2px 11px rgba(69, 65, 164, 0.06), 0px 4px 10px rgba(31, 37, 89,0.07);
+    border-radius: 18px;
+}
+#name.form-control{
+    border: 2px solid #ffd700;
+}
+
+.first{
+    margin-right: 2rem;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-size: smaller;
+    text-align: top;
+    padding: 2rem;
+    margin-bottom: 0%;
+} 
+
+.container-rating{
+    width: fit-content;
+    height: fit-content;
+    background: black;
+    padding: 0%;
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container-rating .star-widget input{
+    display: none;
+}
+.star-widget label{
+    margin-top:-10px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    padding: 0.5rem;
+    float: right;
+    transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+    color:#fd4;
+}
+input:checked ~ label{
+    color: #fd4;
+}
+input#rate-5:checked ~ label{
+    color: #fe7;
+    text-shadow: 0 0 20px #952;
+}
+.text-rating{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    margin-top: 1%;
+}
+.form-check-label{
+    margin-top: 0.2%;
+    position: absolute;
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #6F6C90;
+}
+.btn-primary{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: auto;
+    background: linear-gradient(140.08deg, #A87C2F 0%, #E7B542 85.52%);
+    box-shadow: rgba(173, 121, 16, 0.15);
+    border-radius: 18px;
+    border: none;
+}
+@media (max-width:500px) 
+{
+    .container{
+        width: 100%;
+    }
+}
